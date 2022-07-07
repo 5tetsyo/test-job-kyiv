@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_block {
+    display: flex;
+    flex: row;
+    background-color: rgb(125, 155, 255);
+    min-height: 70px;
+    justify-content:space-between;
+    align-items: center;
+}
+.header_values {
+    font-size: 20px;
+    color: aliceblue;
+    padding: 0 20px;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.form_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+    justify-content: center;
+    align-items: center;
+}
+.Form > label {
+    font-size: 20px;
+    width: 300px;
+}
+.Form > input {
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+.Form > select {
+    width: 70px;
+    height: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgb(125, 155, 255);
+    color: white;
+}

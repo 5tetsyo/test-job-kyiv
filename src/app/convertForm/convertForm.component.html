@@ -1,0 +1,28 @@
+<div class='form_wrap'>
+    <form class='Form'>
+        <label>Type a number, and select the value:</label>
+        <input type="number" [value]="firstInput" (input)='changeInputs($event, 1)'/>
+        <p>{{firstInput}}</p>
+        <p>{{selectRates.firstSelect}}</p>
+        <select (change)="setSelectRates($event, 1)">
+            <option disabled selected>Choose the value:</option>
+            <option>UAH</option>
+            <option>EUR</option>
+            <option>USD</option>
+            <option>PLN</option>
+        </select>
+    </form>
+    <form class='Form'>
+        <label>Type a number, and select the value:</label>
+        <input type="number" [value]="secondInput" (input)='changeInputs($event, 2)'/>
+        <p>{{secondInput}}</p>
+        <p>{{selectRates.secondSelect}}</p>
+        <select (change)="setSelectRates($event, 2)">
+            <option disabled selected>Choose the value:</option>
+            <option>UAH</option>
+            <option>EUR</option>
+            <option>USD</option>
+            <option>PLN</option>
+        </select>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+.header_block {
+    display: flex;
+    flex: row;
+    background-color: rgb(125, 155, 255);
+    min-height: 70px;
+    justify-content:space-between;
+    align-items: center;
+}
+.header_values {
+    font-size: 20px;
+    color: aliceblue;
+    padding: 0 20px;
+}

@@ -1,0 +1,41 @@
+.form_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+    justify-content: center;
+    align-items: center;
+}
+.Form > label {
+    font-size: 20px;
+    width: 300px;
+}
+.Form > input {
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+.Form > select {
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgb(125, 155, 255);
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
